@@ -27,3 +27,9 @@ console.log(a==c) //true
 let myname = "Payal"
 console.log(myname) //payal
 console.log(typeof(myname)) //string
+
+let stage;
+console.log(stage) //undefined
+console.log(typeof(stage)) //undefined
+
+console.log(typeof(null)); //object
