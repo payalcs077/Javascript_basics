@@ -24,3 +24,6 @@ console.log(a==b) //false
 console.log(b==c) //false
 console.log(a==c) //true
 
+let myname = "Payal"
+console.log(myname) //payal
+console.log(typeof(myname)) //string
