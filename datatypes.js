@@ -9,7 +9,7 @@
 7. Symbol => unique
 
 ** non primitive
-8. Object
+8. Object,function,array
 */
 
 let x = 3 
@@ -33,3 +33,13 @@ console.log(stage) //undefined
 console.log(typeof(stage)) //undefined
 
 console.log(typeof(null)); //object
+
+//non primitive datatypes
+//objects
+let myobj = {
+  myname : "Payal",
+  age : 22
+}
+
+console.log(myobj) //{ myname: 'Payal', age: 22 }
+console.log(typeof(myobj)) //object
