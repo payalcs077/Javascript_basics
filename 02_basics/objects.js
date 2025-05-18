@@ -1,42 +1,42 @@
-// //Symbol
-// const mysym = Symbol("Key1");
+//Symbol
+const mysym = Symbol("Key1");
 
-// const JsUser = {
-//     name: "Payal",
-//     [mysym] : "myKey1",
-//     "full name" : "Payal Thappa",
-//     age : 18,
-//     location : "Jammu",
-//     email : "payal@google.com",
-//     isLoggedIn : false,
-//     LastLoginDays : ["Monday","Saturday"]
-// }
+const JsUser = {
+    name: "Payal",
+    [mysym] : "myKey1",
+    "full name" : "Payal Thappa",
+    age : 18,
+    location : "Jammu",
+    email : "payal@google.com",
+    isLoggedIn : false,
+    LastLoginDays : ["Monday","Saturday"]
+}
 
 // console.log(JsUser);
 
-// // console.log(JsUser["full name"]);
-// // console.log(JsUser["email"]);
+// console.log(JsUser["full name"]);
+// console.log(JsUser["email"]);
 
 
-// //Object.freeze(JsUser); // freeze method makes the object immutable
-// // JsUser.email = "payal@dxc.com";
-// // console.log(JsUser.email);
+Object.freeze(JsUser); // freeze method makes the object immutable
+JsUser.email = "payal@dxc.com";
+// console.log(JsUser.email);
 
-// //Function inside object
+//Function inside object
 
-// JsUser.greeting = function(){
-//     console.log(`Hello JS User`);
+JsUser.greeting = function(){
+    console.log(`Hello JS User`);
 
-// }
+}
 
-// JsUser.greetingTwo = function(){
-//     console.log(`Hello JS USer ${this["full name"]}`);
-// }
-// console.log((JsUser.greetingTwo()));
+JsUser.greetingTwo = function(){
+    console.log(`Hello JS USer ${this["full name"]}`);
+}
+console.log((JsUser.greetingTwo()));
 
-// console.log(JsUser.greeting());
+console.log(JsUser.greeting());
 
-// const tinderUser = new Object()
+//const tinderUser = new Object()
 
 const tinderUser = {}
 
@@ -81,7 +81,6 @@ const users = [
 ]
 users[1].email;
 // console.log(users[1].email);
-
 // console.log(tinderUser)
 // console.log(Object.keys(tinderUser));// returns the keys of the object and return type is an array (important topic)
 // console.log(Object.values(tinderUser));// returns the values of the object and return type is an array (important topic)
