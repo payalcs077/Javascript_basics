@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Code</h1>
+    <button id="stop">STOP</button>
+</body>
+<script>
+    // let isStopped = false
+    // function sayGreetings(){
+    //     console.log("Hi, Everyone");
+    //     }
+    function ChangeText(){
+        document.querySelector("h1").innerHTML = "Best JS Series"
+    }
+    const changeMe = setTimeout(ChangeText,2000)
+
+    document.querySelector("#stop").addEventListener('click',function(e){
+        clearTimeout(changeMe);
+        console.log("Stopped")
+        document.querySelector("#stop").innerHTML = "Stopped"
+    },false)
+
+
+    // const button  = document.querySelector("#stop")
+    // button.addEventListener('click',function(e){
+    //     if(isStopped === false){
+    //         clearTimeout(changeMe);
+    //         console.log('Stopped')
+    //         button.innerHTML = 'Reset'
+    //         isStopped = true
+    //     }
+    //     else{
+    //         document.querySelector("h1").innerHTML = "Let's learn DOM"
+    //         setTimeout();
+    //         button.innerHTML = 'Stop'
+    //         isStopped = false
+    //     }
+    // },false)
+</script>
+</html>
